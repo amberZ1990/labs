@@ -55,6 +55,7 @@ body{
 }
 .logo{
     float: left;
+    width: 121px;
 }
 .nav{
     position: fixed;
