@@ -84,7 +84,7 @@ body{
 }
 .nav_btn{
     position: absolute;
-    top:24px;
+    top:14px;
     right: 10px;
     width: 26px;
     display: none;
@@ -92,7 +92,7 @@ body{
 .nav-min{
     position: absolute;
     width: 100%;
-    top:68px;
+    top:48px;
     left:0;
     z-index: 10;
     background: #333;
@@ -201,7 +201,6 @@ img{
     font-size: 14px;
     color: #616161;
 }
-
 
 /*about*/
 .about{
@@ -683,11 +682,15 @@ li.wechat{
     }
     .about-four{
         padding:0;
+        text-align: center;
     }
     .about-four span{
+        float: initial;
         width: 23%;
+        margin:0;
         max-width: 289px;
-    }
+        display: inline-block;
+    }   
     .award-list{
         margin-top:5%;
         margin-left:5%;
@@ -739,6 +742,7 @@ li.wechat{
     }
     .about-four span{
         width: 45%;
+        margin:1%;
     }
     .about-four span:hover{
         -webkit-transform: inherit;
@@ -756,11 +760,11 @@ li.wechat{
     }   
 }
 @media  screen and (max-width:768px){
-    /* body{
-        padding-top:68px;
-    } */
+    body{
+        padding-top:48px;
+    }
     .nav{
-        padding:20px;
+        padding:10px 20px;
         position: fixed;
         width: 100%;
         top:0;
