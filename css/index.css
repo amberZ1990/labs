@@ -801,6 +801,9 @@ li.wechat{
         display: block;
         text-align: center;
     }
+    .con-head-right{
+        margin-left:0;
+    }
     .position h2{
         margin:0;
         text-align: center;
