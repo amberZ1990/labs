@@ -44,6 +44,7 @@ a,.tans,.about-four span,.award-list li,.blog-pic img{-webkit-transition:all 0.2
 body{
     min-width: 320px;
     padding-top:68px;
+    -webkit-font-smoothing: antialiased;
 }
 .content{
     font-size: 16px;
@@ -280,7 +281,7 @@ img{
 .logo-list img{
     width: 120px;
     height: 46px;
-    border:1px solid #b4bdcd;
+    /* border:1px solid #b4bdcd; */
 }
 /*pd*/
 .pd,.pd-min{
@@ -759,6 +760,22 @@ li.wechat{
         float: inherit;
         margin:0 auto;
     }   
+    .method-list li{
+        background-image: url(../images/home.png);
+        background-size:7%;
+    }
+    li.postcode{
+        background-image: url(../images/eye.png);
+    }
+    li.dress{
+        background-image: url(../images/map.png);
+    }
+    li.email{
+        background-image: url(../images/Email.png);
+    }
+    li.wechat{
+        background-image: url(../images/WeChat.png);
+    }    
 }
 @media  screen and (max-width:768px){
     body{
