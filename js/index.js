@@ -66,6 +66,7 @@ var swiper = new Swiper('.pd-min .swiper-container', {
     //pd-list
 
     $('.pd-list-ul li').mouseenter(function(){
+        $(this).addClass('pd-blue').siblings('li').removeClass('pd-blue');
         var list_index = $(this).index();
         $('.pd-txt-detail').eq(list_index).addClass('blk').siblings('.pd-txt-detail').removeClass('blk');
     })
@@ -91,21 +92,6 @@ var swiper = new Swiper('.pd-min .swiper-container', {
     $('.blur_block').css({'height':h1+'px'})
 
 
-
-    //吸顶导航
-
-function nav(){
-	var fixH = $('.mainV').height();
-	$(window).scroll(function(){
-		var windowH = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-		if(windowH>fixH){
-			$('.nav').addClass('fix');
-		}else if(windowH<fixH){
-			$('.nav').removeClass('fix');
-		}
-	});
-}
-
 function nav_hash() {
     var $nav = $(".nav-item a");
     $nav.on('click', function(event) {
@@ -121,7 +107,6 @@ function nav_hash() {
         }
     });
 }
-nav();
 nav_hash();
 
 //min-nav-slide

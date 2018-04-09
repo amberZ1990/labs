@@ -43,6 +43,7 @@ a,.tans,.about-four span,.award-list li,.blog-pic img{-webkit-transition:all 0.2
 }
 body{
     min-width: 320px;
+    padding-top:68px;
 }
 .content{
     font-size: 16px;
@@ -56,8 +57,13 @@ body{
     float: left;
 }
 .nav{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
     padding:25px 0;
     background:#2d2d30;
+    z-index: 20;
 }
 .nav-item{
     float: right;
@@ -78,9 +84,9 @@ body{
 }
 .nav_btn{
     position: absolute;
-    top:20px;
+    top:24px;
     right: 10px;
-    width: 36px;
+    width: 26px;
     display: none;
 }
 .nav-min{
@@ -136,7 +142,7 @@ img{
     max-width: 100%;
 }
 .mainV,.page{
-    height: 718px;
+    height: 500px;
     overflow: hidden;
 }
 .page{
@@ -146,25 +152,25 @@ img{
     background: #657584;
 }
 .line{
-    background: url(../images/line.jpg) no-repeat center top;
+    background: url(../images/line500.jpg) no-repeat center top;
 }
 .leftA{
-    background: url(../images/left.png) no-repeat left top;
+    background: url(../images/white_l.png) no-repeat left top;
 }
 .rightA{
-    background: url(../images/right.png) no-repeat right bottom;
+    background: url(../images/white_r.png) no-repeat right bottom;
 }
 .robot1{
-    background: url(../images/rob1.png) no-repeat right bottom; 
+    background: url(../images/white_rob.png) no-repeat right bottom; 
 }
 .robot2{
-    background: url(../images/rob2.png) no-repeat left bottom; 
+    background: url(../images/line_rob.png) no-repeat left bottom; 
 }
 .mainTxt{
-    background: url(../images/main.png) no-repeat center top; 
+    background: url(../images/white_txt.png) no-repeat center top; 
 }
 .mainTxt2{
-    background: url(../images/main2.png) no-repeat center top; 
+    background: url(../images/line_txt.png) no-repeat center top; 
 }
 
 /*banner*/
@@ -176,18 +182,20 @@ img{
     bottom:20px;
 }
 .mainV .swiper-pagination-bullet{
-    width:20px;
+    width:10px;
     height:10px;
     opacity: 1;
     vertical-align: middle;
     border-radius: 50px 50px;
-    background: #fff;
+    background: transparent;
+    border:1px solid #0070bb;
 }
 .mainV .swiper-pagination-bullet-active{
     width: 70px;
     transition: all 0.5s;
     border-radius: 50px 50px;
-    background: #0070bb;
+    background: #fff;
+    border:0;
 }
 .content{
     font-size: 14px;
@@ -298,6 +306,7 @@ img{
     width: 267px;
     line-height: 1.8;
     letter-spacing: 2px;
+    margin-top:-30px;
 }
 .data-shade{
     position: absolute;
@@ -395,12 +404,7 @@ img{
 .pd-blue .pd-tit{
     background: #0070bb;
 }
-li.pd-blue:hover .shade{
-    background: #000;
-}
-li.pd-blue:hover .pd-tit{
-    background: #414142;
-}
+
 .pd-txt-detail{
     display: none;
 }
@@ -637,7 +641,7 @@ li.wechat{
     }
 
     .mainV,.page{
-        height: 518px;
+        height: 300px;
     } 
     .posiB{
         background-size:contain;
@@ -684,10 +688,23 @@ li.wechat{
         width: 23%;
         max-width: 289px;
     }
-    .award-list,.logo-list{
+    .award-list{
         margin-top:5%;
         margin-left:5%;
-        width: 45%;
+        width:100%;
+    }
+    .logo-list{
+        margin-top:5%;
+        width: 100%;
+        text-align: center;
+    }
+    .logo-list li{
+        float: initial;
+       display: inline-block;
+       margin-right: 0;
+    }
+    .logo-list img{
+        width: 110px;
     }
     .pd-list li{
         width: 45%;
@@ -716,6 +733,7 @@ li.wechat{
     .nav-item a{
         font-size: 16px;
     }
+ 
     .award-list,.logo-list{
         width: 95%;
     }
@@ -738,9 +756,9 @@ li.wechat{
     }   
 }
 @media  screen and (max-width:768px){
-    body{
+    /* body{
         padding-top:68px;
-    }
+    } */
     .nav{
         padding:20px;
         position: fixed;
@@ -754,14 +772,11 @@ li.wechat{
     }
     .nav-item{
         display: none;
-    }
-    .mainV,.page{
-        height: 318px;
-    }
- 
+    } 
     h1.posiB{
         background-size:130%;
     }
+
     .robot1,.robot2{
         background-size:150%;
     }
@@ -773,9 +788,6 @@ li.wechat{
     }
     .award-list li span{
         display: block;
-    }
-    .logo-list li{
-        margin-right: 5%;
     }
     .pdNum{
         font-size: 40px;
@@ -791,6 +803,9 @@ li.wechat{
     .position,.con-method{
         padding:5%;
     }
+    .posi-name{
+        margin-bottom:10px;
+    }
     .position dl{
         margin-bottom:25px;
     }
@@ -798,12 +813,14 @@ li.wechat{
         float: inherit;
     }
     .position dt{
-        width: 110px;
+        width: 100px;
+        height:auto;
         padding-top:0;
-        margin:0 auto;
+        margin:0 auto 10px;
     }
     .position dd{
         width: 100%;
+        line-height: 27px;
     }
     li.home{
         font-size: 18px;  
@@ -816,5 +833,18 @@ li.wechat{
     .info-detail{
         font-size: 14px; 
     }
+    .blog{
+        padding-top:30px;
+    }
 }
 
+@media  screen and (max-width:500px){
+        .mainV,.page{
+        height: 200px;
+    }   
+}
+@media  screen and (max-width:414px){
+    .mainV,.page{
+        height: 160px;
+    } 
+}
