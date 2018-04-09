@@ -187,8 +187,8 @@ img{
     opacity: 1;
     vertical-align: middle;
     border-radius: 50px 50px;
-    background: transparent;
-    border:1px solid #0070bb;
+    background: #fff;
+    border:2px solid #0070bb;
 }
 .mainV .swiper-pagination-bullet-active{
     width: 70px;
