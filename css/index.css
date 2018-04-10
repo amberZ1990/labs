@@ -637,10 +637,9 @@ li.wechat{
     .mainV .swiper-pagination-bullet{
         height: 5px;
     }
-
     .mainV,.page{
-        height: 300px;
-    } 
+        height: 400px;
+    }    
     .posiB{
         background-size:110%;
     }   
@@ -655,7 +654,10 @@ li.wechat{
     }  
     .ma{
         width: 100%;
-    }    
+    }   
+    .mainV,.page{
+        height: 320px;
+    }  
     .pd{
         display: none;
     } 
@@ -722,6 +724,9 @@ li.wechat{
         padding-bottom:27px;
         font-size: 18px;
     }
+    .mainV,.page{
+        height: 260px;
+    }       
     .tit-icon{
         background-image:url(../images/tit_icon2X.png);
         background-size: 100%;
