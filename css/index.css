@@ -233,10 +233,9 @@ img{
     width: 420px;
     padding-top:28px;
     border-left: 1px solid #bfbfbf;
-    margin-left:120px;
+    margin-left:20px;
 }
 .award-list li{
-
     margin-left:-7px;
     margin-bottom:32px;
     padding-left:32px;
@@ -270,18 +269,16 @@ img{
     content: '';
 }
 .logo-list{
-    width: 619px;
+    width: 759px;
     margin-top:124px;
 }
 .logo-list li{
     float: left;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 18px;
+    margin-bottom:18px;
 }
 .logo-list img{
     width: 170px;
-    /* height: 46px; */
-    /* border:1px solid #b4bdcd; */
 }
 /*pd*/
 .pd,.pd-min{
@@ -645,7 +642,7 @@ li.wechat{
         height: 300px;
     } 
     .posiB{
-        background-size:contain;
+        background-size:110%;
     }   
     .line{
         background-size: cover;
@@ -757,6 +754,10 @@ li.wechat{
         float: inherit;
         margin:0 auto;
     }   
+    .award-list li{
+        /* background: url(../images/list_dot2X.png) no-repeat left center; */
+        /* background-size: 8%;  */
+    }    
     .method-list li{
         background-image: url(../images/home.png);
         background-size:7%;
@@ -793,9 +794,12 @@ li.wechat{
         display: none;
     } 
     h1.posiB{
-        background-size:130%;
+        background-size:150%;
     }
 
+    .robot2{
+        background-image: url(../images/line_rob768.png); 
+    }    
     .robot1,.robot2{
         background-size:150%;
     }
@@ -863,10 +867,17 @@ li.wechat{
 @media  screen and (max-width:500px){
         .mainV,.page{
         height: 200px;
-    }   
+    }
+    .logo-list li{
+        width: 45%;
+    }          
 }
 @media  screen and (max-width:414px){
     .mainV,.page{
-        height: 160px;
+        height: 170px;
     } 
+    .mainV .swiper-container-horizontal>.swiper-pagination{
+        bottom:10px;
+    }
+ 
 }
