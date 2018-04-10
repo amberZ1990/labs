@@ -42,6 +42,7 @@ a,.tans,.about-four span,.award-list li,.blog-pic img{-webkit-transition:all 0.2
     height: 100%;
 }
 body{
+    overflow-x: hidden;
     min-width: 320px;
     padding-top:68px;
     -webkit-font-smoothing: antialiased;
@@ -676,9 +677,6 @@ li.wechat{
     .con-method{
         padding:64px 0;
     }
-    .about{
-        padding:0 5%;
-    }
     .about-four{
         padding:0;
         text-align: center;
@@ -728,6 +726,9 @@ li.wechat{
     .tit-icon{
         background-image:url(../images/tit_icon2X.png);
         background-size: 100%;
+        margin-right:5px;
+        width: 20px;
+        height: 20px;
     }
     .nav-item li{
         margin-left:40px;
