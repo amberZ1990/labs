@@ -692,12 +692,11 @@ li.wechat{
     }   
     .award-list{
         margin-top:5%;
-        margin-left:5%;
-        width:100%;
+        width:45%;
     }
     .logo-list{
         margin-top:5%;
-        width: 100%;
+        width:50%;
         text-align: center;
     }
     .logo-list li{
@@ -726,15 +725,15 @@ li.wechat{
         padding-bottom:27px;
         font-size: 18px;
     }
+    .tit-icon{
+        background-image:url(../images/tit_icon2X.png);
+        background-size: 100%;
+    }
     .nav-item li{
         margin-left:40px;
     }
     .nav-item a{
         font-size: 16px;
-    }
- 
-    .award-list,.logo-list{
-        width: 95%;
     }
     .about-four span{
         width: 45%;
@@ -754,25 +753,15 @@ li.wechat{
         float: inherit;
         margin:0 auto;
     }   
-    .award-list li{
-        /* background: url(../images/list_dot2X.png) no-repeat left center; */
-        /* background-size: 8%;  */
-    }    
-    .method-list li{
-        background-image: url(../images/home.png);
-        background-size:7%;
+  
+}
+@media  screen and (max-width:780px){
+    .award-list,.logo-list{
+        width: 95%;
     }
-    li.postcode{
-        background-image: url(../images/eye.png);
-    }
-    li.dress{
-        background-image: url(../images/map.png);
-    }
-    li.email{
-        background-image: url(../images/Email.png);
-    }
-    li.wechat{
-        background-image: url(../images/WeChat.png);
+    .award-list{
+        margin-left:10%;
+        padding-right:10%;
     }    
 }
 @media  screen and (max-width:768px){
@@ -861,7 +850,7 @@ li.wechat{
     }
     .blog{
         padding-top:30px;
-    }
+    }     
 }
 
 @media  screen and (max-width:500px){
@@ -870,7 +859,23 @@ li.wechat{
     }
     .logo-list li{
         width: 45%;
-    }          
+    } 
+    .method-list li{
+        background-image: url(../images/home.png);
+        background-size:7%;
+    }
+    li.postcode{
+        background-image: url(../images/eye.png);
+    }
+    li.dress{
+        background-image: url(../images/map.png);
+    }
+    li.email{
+        background-image: url(../images/Email.png);
+    }
+    li.wechat{
+        background-image: url(../images/WeChat.png);
+    }              
 }
 @media  screen and (max-width:414px){
     .mainV,.page{

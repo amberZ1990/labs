@@ -116,3 +116,5 @@ $('.nav_btn').click(function(){
 $('.nav-min li').click(function(){
     $('.nav-min').slideUp();
 })
+
+$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
