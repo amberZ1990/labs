@@ -42,7 +42,6 @@ a,.tans,.about-four span,.award-list li,.blog-pic img{-webkit-transition:all 0.2
     height: 100%;
 }
 body{
-    overflow-x: hidden;
     min-width: 320px;
     padding-top:68px;
     -webkit-font-smoothing: antialiased;
@@ -762,7 +761,8 @@ li.wechat{
     }
     .award-list{
         margin-left:10%;
-        padding-right:10%;
+        margin-right:10%;
+        width: 85%;
     }    
 }
 @media  screen and (max-width:768px){
