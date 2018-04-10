@@ -279,8 +279,8 @@ img{
     margin-bottom: 30px;
 }
 .logo-list img{
-    width: 120px;
-    height: 46px;
+    width: 170px;
+    /* height: 46px; */
     /* border:1px solid #b4bdcd; */
 }
 /*pd*/
@@ -707,9 +707,6 @@ li.wechat{
         float: initial;
        display: inline-block;
        margin-right: 0;
-    }
-    .logo-list img{
-        width: 110px;
     }
     .pd-list li{
         width: 45%;
